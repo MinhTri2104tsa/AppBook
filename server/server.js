@@ -19,7 +19,7 @@ await connectDB(); // Establish connection to the database
 
 await connectCloudinary() //Setup cloudinary for image storage
 //Allow multiple origins
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["http://localhost:5173", "https://app-book-eta.vercel.app"];
 
 //Stripe Webhook endpoint
 app.post('/stripe', express.raw({type: 'application/json'}),stripeWebhooks);
